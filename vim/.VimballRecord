@@ -1,0 +1,2 @@
+tagbar.vmb: call delete('/home/wilesduan/.vim/autoload/tagbar.vim')|call delete('/home/wilesduan/.vim/doc/tagbar.txt')|call delete('/home/wilesduan/.vim/plugin/tagbar.vim')|call delete('/home/wilesduan/.vim/syntax/tagbar.vim')
+download_script.php?src_id=19700: call delete('/home/wilesduan/.vim/README.md')|call delete('/home/wilesduan/.vim/autoload/tagbar.vim')|call delete('/home/wilesduan/.vim/doc/tagbar.txt')|call delete('/home/wilesduan/.vim/plugin/tagbar.vim')|call delete('/home/wilesduan/.vim/syntax/tagbar.vim')
