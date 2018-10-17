@@ -1,8 +1,0 @@
-#!/bin/bash
-cd ~/.vim/phpm/
-args=" "
-while (( "$#" )); do
-    args="$args $1"
-    shift
-done
-php reader.php $args

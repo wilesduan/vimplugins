@@ -1,9 +1,0 @@
-let g:netrw_dirhistmax  =10
-let g:netrw_dirhist_cnt =7
-let g:netrw_dirhist_1='/home/wilesduan/freecall/backend/confsvr/conf/logicsvr'
-let g:netrw_dirhist_2='/home/wilesduan/freecall/backend/regsvr/src'
-let g:netrw_dirhist_3='/home/wilesduan/freecall/backend/common/src'
-let g:netrw_dirhist_4='/home/wilesduan/temp'
-let g:netrw_dirhist_5='/home/wilesduan/work/wilesduan/tarball/protobuf-2.5.0/protobuf'
-let g:netrw_dirhist_6='/home/wilesduan/work/wilesduan/common_service/res_svr/sdk_src'
-let g:netrw_dirhist_7='/home/wilesduan/work/wilesduan/account_system/proto'
