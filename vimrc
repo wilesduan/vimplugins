@@ -11,8 +11,11 @@ set incsearch
 set cmdheight=2
 
 syntax on
+syntax enable
 filetype on
 set smartindent
+
+
 map <silent> <leader>ss :source ~/.vimrc<cr>
 
 nmap <C-\>c :cs find c <C-R>=expand("<cword>")<CR><CR>
@@ -28,6 +31,7 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/majutsushi/tagbar.git'
+Plugin 'git://github.com:skywind3000/asyncrun.vim.git'
 call vundle#end() 
 
 nmap <F12> <esc>:call RunCtags()
@@ -47,6 +51,7 @@ func! RunCtags()
     exec 'cd'.g:Curr_dir
 endfunc
 
+:nmap <F2> :colorscheme monokain<CR>
 map<F3>:call CompileRunGcc()
 func! CompileRunGcc()
 exec "w"
@@ -180,3 +185,10 @@ func! PhpAlign() range
 endfunc
 
 "inoremap <buffer> <C-H> <ESC>:!/home/wilesduan/.vim/phpm/phpm <C-R>=expand("<cword>")<CR><CR>
+
+augroup vimrc
+	autocmd User AsyncRunStart call asyncrun#quickfix_toggle(10, 1)
+augroup END
+
+set t_Co=256
+colorscheme monokain
