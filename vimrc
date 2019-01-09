@@ -32,6 +32,10 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'git://github.com/majutsushi/tagbar.git'
 Plugin 'git://github.com:skywind3000/asyncrun.vim.git'
+Plugin 'git@github.com:flazz/vim-colorschemes.git'
+Plugin 'git@github.com:mhartington/oceanic-next.git'
+Plugin 'git@github.com:fatih/vim-go.git'
+Plugin 'git@github.com:Valloric/YouCompleteMe.git'
 call vundle#end() 
 
 nmap <F12> <esc>:call RunCtags()
@@ -185,6 +189,18 @@ func! PhpAlign() range
 endfunc
 
 "inoremap <buffer> <C-H> <ESC>:!/home/wilesduan/.vim/phpm/phpm <C-R>=expand("<cword>")<CR><CR>
+"
+let g:gutentags_ctags_tagfile = '.tags'
+let s:vim_tags = expand('~/.cache/tags')
+let g:gutentags_cache_dir = s:vim_tags
+let g:gutentags_auto_add_gtags_cscope = 0
+if !isdirectory(s:vim_tags)
+	silent! call mkdir(s:vim_tags, 'p')
+endif
+
+let g:gutentags_ctags_extra_args = ['--fields=+niazS', '--extra=+q']
+let g:gutentags_ctags_extra_args += ['--c++-kinds=+pxI']
+let g:gutentags_ctags_extra_args += ['--c-kinds=+px']
 
 augroup vimrc
 	autocmd User AsyncRunStart call asyncrun#quickfix_toggle(10, 1)
