@@ -29,13 +29,15 @@ nmap <C-\>t :cs find t <C-R>=expand("<cword>")<CR><CR>
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
-Plugin 'VundleVim/Vundle.vim'
-Plugin 'git://github.com/majutsushi/tagbar.git'
-Plugin 'git://github.com:skywind3000/asyncrun.vim.git'
-Plugin 'git@github.com:flazz/vim-colorschemes.git'
-Plugin 'git@github.com:mhartington/oceanic-next.git'
-Plugin 'git@github.com:fatih/vim-go.git'
-Plugin 'git@github.com:Valloric/YouCompleteMe.git'
+Plugin 'https://kgithub.com/VundleVim/Vundle.vim.git'
+Plugin 'https://kgithub.com/mhinz/vim-startify'
+Plugin 'https://kgithub.com/Yggdroot/indentLine'
+Plugin 'https://kgithub.com/preservim/tagbar.git'
+Plugin 'https://kgithub.com/skywind3000/asyncrun.vim.git'
+Plugin 'https://kgithub.com/flazz/vim-colorschemes.git'
+Plugin 'https://kgithub.com/mhartington/oceanic-next.git'
+Plugin 'https://kgithub.com/fatih/vim-go.git'
+Plugin 'https://kgithub.com/Valloric/YouCompleteMe.git'
 call vundle#end() 
 
 nmap <F12> <esc>:call RunCtags()
