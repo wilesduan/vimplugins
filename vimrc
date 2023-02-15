@@ -38,6 +38,8 @@ Plugin 'https://kgithub.com/flazz/vim-colorschemes.git'
 Plugin 'https://kgithub.com/mhartington/oceanic-next.git'
 Plugin 'https://kgithub.com/fatih/vim-go.git'
 Plugin 'https://kgithub.com/Valloric/YouCompleteMe.git'
+Plugin 'https://kgithub.com/preservim/nerdtree.git'
+Plugin 'https://kgithub.com/vim-scripts/taglist.vim.git'
 call vundle#end() 
 
 nmap <F12> <esc>:call RunCtags()
